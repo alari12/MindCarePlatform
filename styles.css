@@ -1,24 +1,22 @@
-/* General Styles */
-body {
-  font-family: 'Poppins', sans-serif;
+/* Reset some basic styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
+  box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
-  line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(to right, #4CAF50, #66BB6A);
+  background-color: #285e61; /* Deep teal for a calm, relaxing effect */
   color: white;
-  padding: 20px 10px;
+  padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
 }
 
 header nav {
@@ -29,29 +27,24 @@ header nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  font-weight: bold;
 }
 
 header nav a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  text-decoration: underline;
 }
 
+/* Hero Section */
 #hero {
-  background-image: url('https://source.unsplash.com/featured/?mentalhealth');
-  background-size: cover;
-  background-position: center;
-  color: white;
   text-align: center;
-  padding: 100px 20px;
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
+  background-color: #0f4b5e; /* Darker shade of teal */
+  color: white;
 }
 
 #hero h2 {
   font-size: 2.5rem;
-  margin: 0 0 10px;
+  margin-bottom: 20px;
 }
 
 #hero p {
@@ -59,104 +52,135 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 
+#hero button {
+  background-color: #e3a24e; /* Warm gold accent */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #hero button a {
   color: white;
   text-decoration: none;
-  background: #66BB6A;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background 0.3s ease;
 }
 
-#hero button a:hover {
-  background: #4CAF50;
-}
-
-/* Section Styles */
-section {
-  padding: 60px 20px;
+/* About Section */
+#about {
   text-align: center;
+  padding: 40px 20px;
+  background-color: #e1f7f2; /* Light cyan background to complement the mental health theme */
 }
 
-section h2 {
-  color: #4CAF50;
+#about h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-section p {
+#about p {
   font-size: 1rem;
-  margin-bottom: 20px;
-  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-#about {
-  background: #f9f9f9;
+#about img {
+  border-radius: 10px;
+}
+
+/* Resources Section */
+#resources {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+#resources h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 #resources ul {
   list-style-type: none;
-  padding: 0;
 }
 
-#resources ul li {
-  margin: 10px 0;
+#resources li {
   font-size: 1.1rem;
+  margin: 10px 0;
 }
 
-#resources ul li a {
-  color: #4CAF50;
+#resources li a {
+  color: #0f4b5e; /* Matching the dark teal color */
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-#resources ul li a:hover {
-  color: #66BB6A;
+#resources li a:hover {
+  text-decoration: underline;
 }
 
-/* Contact Form */
-#contact form {
-  display: inline-block;
-  text-align: left;
-  max-width: 400px;
-  width: 90%;
+/* Therapist Section */
+#therapists {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
 }
 
-#contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+#therapists h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#therapists p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+#therapists ul {
+  list-style-type: none;
+}
+
+#therapists li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#therapists li a {
+  color: #0f4b5e;
+  text-decoration: none;
+}
+
+#therapists li a:hover {
+  text-decoration: underline;
+}
+
+/* Creator Section */
+#creator {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e1f7f2;
+}
+
+#creator h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#creator p {
   font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-#contact button {
-  display: block;
-  width: 100%;
-  background: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+#creator img {
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-#contact button:hover {
-  background: #388E3C;
-}
-
-/* Footer */
+/* Footer Section */
 footer {
   text-align: center;
   padding: 20px;
-  background: #333;
+  background-color: #285e61;
   color: white;
-}
-
-footer p {
-  margin: 0;
+  font-size: 0.9rem;
 }
