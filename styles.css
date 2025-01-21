@@ -7,15 +7,17 @@
 
 /* Body and General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa; /* Light background for a calm look */
   color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background-color: #285e61; /* Deep teal for a calm, relaxing effect */
+  background-color: #34495e; /* Dark Gray for a mature, professional look */
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -38,7 +40,7 @@ header nav a:hover {
 #hero {
   text-align: center;
   padding: 40px 20px;
-  background-color: #0f4b5e; /* Darker shade of teal */
+  background-color: #2c3e50; /* Dark Blue for a professional, calm vibe */
   color: white;
 }
 
@@ -53,7 +55,7 @@ header nav a:hover {
 }
 
 #hero button {
-  background-color: #e3a24e; /* Warm gold accent */
+  background-color: #e67e22; /* Orange accent for buttons */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -70,7 +72,7 @@ header nav a:hover {
 #about {
   text-align: center;
   padding: 40px 20px;
-  background-color: #e1f7f2; /* Light cyan background to complement the mental health theme */
+  background-color: #ecf0f1; /* Light Gray for a calming backdrop */
 }
 
 #about h2 {
@@ -85,102 +87,25 @@ header nav a:hover {
   line-height: 1.6;
 }
 
-#about img {
-  border-radius: 10px;
-}
-
-/* Resources Section */
-#resources {
-  padding: 40px 20px;
-  background-color: #ffffff;
-}
-
-#resources h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#resources ul {
-  list-style-type: none;
-}
-
-#resources li {
-  font-size: 1.1rem;
-  margin: 10px 0;
-}
-
-#resources li a {
-  color: #0f4b5e; /* Matching the dark teal color */
-  text-decoration: none;
-}
-
-#resources li a:hover {
-  text-decoration: underline;
-}
-
-/* Therapist Section */
-#therapists {
+/* Emergency Section */
+#emergency {
   padding: 40px 20px;
   background-color: #f4f4f4;
 }
 
-#therapists h2 {
+#emergency h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-#therapists p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-#therapists ul {
+#emergency ul {
   list-style-type: none;
+  margin: 20px 0;
 }
 
-#therapists li {
+#emergency li {
   font-size: 1.1rem;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
-#therapists li a {
-  color: #0f4b5e;
-  text-decoration: none;
-}
-
-#therapists li a:hover {
-  text-decoration: underline;
-}
-
-/* Creator Section */
-#creator {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #e1f7f2;
-}
-
-#creator h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#creator p {
-  font-size: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-#creator img {
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-/* Footer Section */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #285e61;
-  color: white;
-  font-size: 0.9rem;
-}
+#emergency li a {
