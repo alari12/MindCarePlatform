@@ -6,7 +6,6 @@
   <title>MindCare Platform</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
   <header>
@@ -24,7 +23,7 @@
     <section id="about">
       <h2>About MindCare Platform</h2>
       <p>MindCare is dedicated to providing resources and support for mental health awareness and care. Our mission is to connect you with trusted information and guidance to help you navigate life's challenges.</p>
-      <img src="https://www.vecteezy.com/vector-art/412244-mental-health-and-disorder-illustration" alt="Mental Health Illustration" class="animate__animated animate__zoomIn">
+      <img src="https://via.placeholder.com/600x400" alt="Mental Health Illustration">
     </section>
 
     <section id="faq">
@@ -33,36 +32,20 @@
         <h3>Where can I find a therapist near me?</h3>
         <p>You can find a list of verified therapists on trusted platforms such as <a href="https://www.psychologytoday.com" target="_blank">Psychology Today</a>.</p>
       </div>
-      <div class="faq-item">
-        <h3>What are common causes of depression?</h3>
-        <p>Depression can be caused by various factors, including genetics, trauma, stress, and chemical imbalances in the brain.</p>
-      </div>
-      <div class="faq-item">
-        <h3>How can I handle family problems?</h3>
-        <p>Effective communication, seeking professional counseling, and fostering understanding can help address family issues.</p>
-      </div>
     </section>
 
-    <section id="contact">
-      <h2>Emergency Hotline</h2>
-      <p>If you're in crisis, call <strong>0800-123-4567</strong> immediately for support.</p>
-      <p>Alternatively, connect with us on WhatsApp: 
-        <a href="https://wa.me/2347041726602?text=Hello%20dear,how%20can%20I%20be%20of%20service%20" target="_blank">Chat Now</a>
-      </p>
+    <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <form action="https://formspree.io/f/{your-id}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <textarea name="comment" placeholder="Your Comment" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 MindCare Platform. All rights reserved.</p>
   </footer>
-
-  <script>
-    gsap.from("nav a", { opacity: 0, y: -20, duration: 1, stagger: 0.2 });
-    gsap.from("section", { opacity: 0, y: 50, duration: 1, scrollTrigger: {
-      trigger: "section",
-      start: "top 80%",
-      toggleActions: "play none none none"
-    }});
-  </script>
 </body>
 </html>
