@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MindCare Platform</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
   <header>
-    <h1>MindCare Platform</h1>
-    <p>Your Mental Wellness Companion</p>
+    <h1 class="animate__animated animate__fadeInDown">MindCare Platform</h1>
+    <p class="animate__animated animate__fadeInUp">Your Mental Wellness Companion</p>
   </header>
 
   <nav>
@@ -21,8 +23,8 @@
   <main>
     <section id="about">
       <h2>About MindCare Platform</h2>
-      <p>MindCare is dedicated to providing resources and support for mental health awareness and care. 
-      Our mission is to connect you with trusted information and guidance to help you navigate life's challenges.</p>
+      <p>MindCare is dedicated to providing resources and support for mental health awareness and care. Our mission is to connect you with trusted information and guidance to help you navigate life's challenges.</p>
+      <img src="https://www.vecteezy.com/vector-art/412244-mental-health-and-disorder-illustration" alt="Mental Health Illustration" class="animate__animated animate__zoomIn">
     </section>
 
     <section id="faq">
@@ -53,5 +55,14 @@
   <footer>
     <p>&copy; 2025 MindCare Platform. All rights reserved.</p>
   </footer>
+
+  <script>
+    gsap.from("nav a", { opacity: 0, y: -20, duration: 1, stagger: 0.2 });
+    gsap.from("section", { opacity: 0, y: 50, duration: 1, scrollTrigger: {
+      trigger: "section",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }});
+  </script>
 </body>
 </html>
