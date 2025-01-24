@@ -1,77 +1,68 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f3f4f6;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCare Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="animate__animated animate__fadeInDown">MindCare Platform</h1>
+    <p class="animate__animated animate__fadeInUp">Your Mental Wellness Companion</p>
+  </header>
 
-/* Header */
-header {
-  text-align: center;
-  padding: 20px;
-  background: #0066cc;
-  color: #fff;
-}
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#faq">FAQs</a>
+    <a href="#contact">Emergency Hotline</a>
+  </nav>
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
+  <main>
+    <section id="about">
+      <h2>About MindCare Platform</h2>
+      <p>MindCare is dedicated to providing resources and support for mental health awareness and care. Our mission is to connect you with trusted information and guidance to help you navigate life's challenges.</p>
+      <img src="https://www.vecteezy.com/vector-art/412244-mental-health-and-disorder-illustration" alt="Mental Health Illustration" class="animate__animated animate__zoomIn">
+    </section>
 
-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Where can I find a therapist near me?</h3>
+        <p>You can find a list of verified therapists on trusted platforms such as <a href="https://www.psychologytoday.com" target="_blank">Psychology Today</a>.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What are common causes of depression?</h3>
+        <p>Depression can be caused by various factors, including genetics, trauma, stress, and chemical imbalances in the brain.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I handle family problems?</h3>
+        <p>Effective communication, seeking professional counseling, and fostering understanding can help address family issues.</p>
+      </div>
+    </section>
 
-/* Navigation */
-nav {
-  text-align: center;
-  padding: 10px 0;
-  background: #004a99;
-}
+    <section id="contact">
+      <h2>Emergency Hotline</h2>
+      <p>If you're in crisis, call <strong>0800-123-4567</strong> immediately for support.</p>
+      <p>Alternatively, connect with us on WhatsApp: 
+        <a href="https://wa.me/2347041726602?text=Hello%20dear,how%20can%20I%20be%20of%20service%20" target="_blank">Chat Now</a>
+      </p>
+    </section>
+  </main>
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
+  <footer>
+    <p>&copy; 2025 MindCare Platform. All rights reserved.</p>
+  </footer>
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-section h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #004a99;
-}
-
-.faq-item h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-  color: #0066cc;
-}
-
-.faq-item p {
-  margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #004a99;
-  color: #fff;
-}
+  <script>
+    gsap.from("nav a", { opacity: 0, y: -20, duration: 1, stagger: 0.2 });
+    gsap.from("section", { opacity: 0, y: 50, duration: 1, scrollTrigger: {
+      trigger: "section",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    }});
+  </script>
+</body>
+</html>
