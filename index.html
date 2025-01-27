@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MindCare Platform</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 class="animate__animated animate__fadeInDown">MindCare Platform</h1>
-    <p class="animate__animated animate__fadeInUp">Your Mental Wellness Companion</p>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">MindCare Platform</div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#emergency">Emergency Hotline</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Your Mental Wellness Companion</h1>
+            <p>Providing resources and support for mental health awareness and care.</p>
+        </div>
+    </header>
 
-  <nav>
-    <a href="#about">About Us</a>
-    <a href="#faq">FAQs</a>
-    <a href="#contact">Emergency Hotline</a>
-  </nav>
+    <main>
+        <section id="about" class="about">
+            <h2>About MindCare Platform</h2>
+            <p>
+                MindCare is dedicated to providing resources and support for mental health awareness and care. 
+                Our mission is to connect you with trusted information and guidance to help you navigate life's challenges.
+            </p>
+        </section>
 
-  <main>
-    <section id="about">
-      <h2>About MindCare Platform</h2>
-      <p>MindCare is dedicated to providing resources and support for mental health awareness and care. Our mission is to connect you with trusted information and guidance to help you navigate life's challenges.</p>
-      <img src="https://via.placeholder.com/600x400" alt="Mental Health Illustration">
-    </section>
+        <section id="faqs" class="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Where can I find a therapist near me?</h3>
+                <p>
+                    You can find a list of verified therapists on trusted platforms such as 
+                    <a href="https://www.psychologytoday.com" target="_blank">Psychology Today</a>.
+                </p>
+            </div>
+        </section>
 
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-item">
-        <h3>Where can I find a therapist near me?</h3>
-        <p>You can find a list of verified therapists on trusted platforms such as <a href="https://www.psychologytoday.com" target="_blank">Psychology Today</a>.</p>
-      </div>
-    </section>
+        <section id="comments" class="comments">
+            <h2>Leave a Comment</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <textarea name="comment" placeholder="Your Comment" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
-    <section class="comments-section">
-      <h2>Leave a Comment</h2>
-      <form action="https://formspree.io/f/{your-id}" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <textarea name="comment" placeholder="Your Comment" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 MindCare Platform. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 MindCare Platform. All rights reserved.</p>
+    </footer>
 </body>
 </html>
